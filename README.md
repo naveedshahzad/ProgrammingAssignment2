@@ -1,3 +1,14 @@
+###Testing
+
+In order to test solution in this repo, you may run the following code
+
+    m<-matrix(1:4, 2,2)
+    m is assumed to be square and invertible here
+    n<-makeCacheMatrix(x=m)
+    p=cacheSolve(n)
+    to verify if the calculated value is correct
+    round(n$get() %*% p) should return an identity matrix
+
 ### Introduction
 
 This second programming assignment will require you to write an R
@@ -103,3 +114,4 @@ In order to complete this assignment, you must do the following:
 ### Grading
 
 This assignment will be graded via peer assessment.
+
